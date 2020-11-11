@@ -15,7 +15,9 @@ Medical images often have regions of interest marked by doctors. Generally speak
 
 Take this thyroid ultrasound(US) image for example. The black shadow in the middle is a thyroid nodule. The thin white box around it is a mark. We need to obtain images of areas deemed valuable by doctors and build models based on those areas. 
 
-<img src="img/ori.jpg" alt="ultrasound(US) images" width="250" height="250" style="display: block; margin: 0 auto;" />
+<p align="center">
+<img src="img/ori.jpg" alt="ultrasound(US) images" width="250" height="250" />
+</p>
 
 If the gray scale of the white box is stable. For example, it is a fixed value. We can easily locate the white box through a computer program. Unfortunately, in most cases, the gray scale would be affected by the background color. 
 
