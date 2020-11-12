@@ -6,6 +6,7 @@
   * [背景](#背景)
   * [方法](#方法)
   * [结果](#结果)
+  * [MATLAB代码](#代码)
 
 
 ## 背景
@@ -54,3 +55,11 @@ lines = houghlines(ind, T, R, P, 'FillGap',
 结果如下所示。
 
 ![Diagram of method 1](img/result_method1.png)
+
+## 代码
+
+MATLAB 代码在[这](code.m).
+
+## Note
+
+霍夫变换后的点定位处理可以改进。例如，插入try-catch异常捕捉模块。但是目前的效果已经达到我的需求。

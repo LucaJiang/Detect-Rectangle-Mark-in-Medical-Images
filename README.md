@@ -1,13 +1,13 @@
 # Detect Rectangle Mark in Medical Images
 Detect white rectangle mark in medical images, using morphological opening and Hough transform.
 
-The Chinese Version of readme, see [here](README_zhCN.md).
+中文版 readme, 见 [这](README_zhCN.md).
 
 ## Content
   * [Background](#background)
   * [Method](#method)
   * [Result](#result)
-
+  * [MATLAB Code](#code)
 
 ## Background
 
@@ -62,3 +62,11 @@ lines = houghlines(ind, T, R, P, 'FillGap',
 The results show as follows.
 
 ![Diagram of method 1](img/result_method1.png)
+
+## Code
+
+MATLAB code available at [here](code.m).
+
+## Note
+
+The processing of locating the point after the Hough transform could be improved. Insert try-catch exception module, for instance. But the current processing effect has reached my requirements.
