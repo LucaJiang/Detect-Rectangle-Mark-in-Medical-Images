@@ -23,7 +23,7 @@ If the gray scale of the white box is stable. For example, it is a fixed value. 
 
 We generally use hough transform to detect straight lines. However, medical images often have interference elements. For example, in this case, the dividing line between the skin and muscles of the neck could be easily misjudged by the computer as part of the white box. That's why hough transform can not be applied directly.
 
-Besides, to be honest, manual processing of this kind of images is also very laborious. Because the line is too thin.
+Besides, to be honest, manual processing of this kind of images is also very laborious. Because the lines are too thin.
 
 To sum up, it is difficult to detect  white rectangle mark in medical images. And I failed to find a suitable way to deal with such problem on the internet or papers. So I try my best to propose my own ideas on it.
 
