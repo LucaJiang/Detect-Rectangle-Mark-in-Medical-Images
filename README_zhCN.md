@@ -58,7 +58,11 @@ lines = houghlines(ind, T, R, P, 'FillGap',
 
 ## 代码
 
-MATLAB 代码在[这](code.m).
+用于展示函数功能的 MATLAB 代码在[这](code.m).
+
+封装成函数的代码在[这](./package/detect_rectangle_mark.m).
+
+一个用于展示封装好的函数的例子在[这](./package/example.m).
 
 ## Note
 
