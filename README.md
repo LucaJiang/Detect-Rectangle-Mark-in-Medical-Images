@@ -65,7 +65,11 @@ The results show as follows.
 
 ## Code
 
-MATLAB code available at [here](code.m).
+MATLAB code for display available at [here](code.m).
+
+Packaged MATLAB code available at [here](./package/detect_rectangle_mark.m).
+
+An example for the packaged code at [here](./package/example.m).
 
 ## Note
 
