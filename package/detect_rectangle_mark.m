@@ -6,7 +6,7 @@ function [x,y,aim] = detect_rectangle_mark(img)
 % output: x location of the white rectangle mark
 %         y location of the white rectangle mark
 %       aim img in rectangle
-% author        JiangWX
+% author        JiangWX, cxt213
 % date          2020.Dec.31
 % version       0.1.0
 % software      MATLAB R2020b with Image Processing Toolbox
@@ -48,8 +48,20 @@ x(1) = min(from(:, 1))+2;
 x(2) = max(from(:, 1))-2;
 y(1) = min(from(:, 2))+2;
 y(2) = max(to(:, 2))-2;
-aim = oripic(y(1):y(2), x(1):x(2), :);
-x = [x(1) x(2) x(2) x(1)];
-y = [y(1) y(1) y(2) y(2)];
+
+%check if the aspect ratio of aim is normal
+aim_width=x(2)-x(1);
+aim_height=y(2)-y(1);
+aim_r=aim_height/aim_width;
+if aim_r>asp_ratio
+    x=[];
+    y=[];
+    aim=[];
+else  
+    x = [x(1) x(2) x(2) x(1)];
+    y = [y(1) y(1) y(2) y(2)];
+    aim = oripic(y(1):y(3), x(1):x(2), :);
+end
+
 end
 
