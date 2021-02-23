@@ -73,4 +73,6 @@ An example for the packaged code at [here](./package/example.m).
 
 ## Note
 
+[@cxt](https://github.com/cxt213) contributues a handy modifie module, though which you can modifie images that seem wrongly recongnized. 
+
 The processing of locating the point after the Hough transform could be improved. Insert try-catch exception module, for instance. But the current processing effect has reached my requirements.
