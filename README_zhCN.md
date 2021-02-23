@@ -66,4 +66,6 @@ lines = houghlines(ind, T, R, P, 'FillGap',
 
 ## Note
 
+[@cxt](https://github.com/cxt213) 贡献了一个可以手动修改疑似判断错误图片的模块, 在此表达感谢.
+
 霍夫变换后的点定位处理可以改进。例如，插入try-catch异常捕捉模块。但是目前的效果已经达到我的需求。
